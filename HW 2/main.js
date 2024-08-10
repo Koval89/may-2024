@@ -61,9 +61,7 @@ console.log(user[9].password)
 // - описати масив, в якому буде зберігатись інформація про температуру вранці, вдень і ввечері за термін в 7 днів. Як зробити цей масив - вам потрібно подумати.
 // Нормальних варіантів опису - 2. Варіант, коли в вас буде одновимірний масив з 21 значенням вичключаємо одразу
 let days = [[], [], [], [], [], [], []];
-days[0][0] = 'morning = 20 ';
-days[0][1] = 'during the day = 35';
-days[0][2] = 'night = 14';
+days[0][0] = 'morning = 20 during the day = 35, night = 14';
 days[1][0] = 'morning = 21, during the day = 36, night = 16';
 days[2][0] = 'morning = 22, during the day = 38, night = 13';
 days[3][0] = 'morning = 28, during the day = 45, night = 20';
