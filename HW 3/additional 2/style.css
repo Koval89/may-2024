@@ -1,0 +1,16 @@
+body{
+
+    height: 100vh;
+    background-color: darkcyan;
+    margin: 0;
+    color: red;
+
+}
+.user-block{
+    display: flex;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    flex-direction: column;
+    text-decoration-color: red;
+}

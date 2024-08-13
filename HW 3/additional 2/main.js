@@ -263,35 +263,23 @@
     }
     }
     ];
-console.log(usersList)
+
 
 
 for (const usersListElement of usersList) {
     document.write(
-    <div className="users-box">
+    `<div className="users-box">
         <div className="user-block">
-            <h2>ID - NAME - USERNAME </h2>
-            <h3>EMAIL - PHONE</h3>
+            <h2>ID : ${usersListElement.id} NAME: ${usersListElement.name} USERNAME: ${usersListElement.username} </h2>               
+            <h3>EMAIL: ${usersListElement.email}  PHONE: ${usersListElement.phone}</h3>
             <div className="address-block">
-                <p>City - ADDRESS.CITY</p>
-                <p>Street - ADDRESS.STREET</p>
-                <p>Suite - ADDRESS.SUITE</p>
-                <p>Zip code - ADDRESS.ZIPCODE</p>
+                <p>City - ${usersListElement.address.city} </p>
+                <p>Street - ${usersListElement.address.street}</p>
+                <p>Suite - ${usersListElement.address.suite}</p>
+                <p>Zip code - ${usersListElement.address.zipcode}</p>
             </div>
-
         </div>
-
-        <!--
-
-        ...
-        ...
-        ...
-        other users
-
-        -->
-
-
-    </div>)
+    </div>`)
 }
 
 
