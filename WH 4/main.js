@@ -189,9 +189,6 @@
 // Приклад exchange(10000,[{currency:'USD',value:25},{currency:'EUR',value:42}],'USD') // => 400
 
 
-
-
-
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     for (const currency of currencyValues) {
         if (currency.currency === exchangeCurrency) {
@@ -206,3 +203,75 @@ const cur = [
 
 console.log(exchange(10000, cur, 'USD'));
 console.log(exchange(10000, cur, 'EUR'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
