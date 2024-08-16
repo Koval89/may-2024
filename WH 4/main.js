@@ -112,7 +112,7 @@
 //     for (const arrayElement of array) {
 //         document.write(`<div>`)
 //         for (const arrayElementKey in arrayElement) {
-//             document.write(`${arrayElementKey} - ${arrayElement[arrayElementKey]}/ `)
+//             document.write(`${arrayElementKey} - ${arrayElement[arrayElementKey]} <br>`)
 //         }
 //         document.write(`</div>`)
 //     }
