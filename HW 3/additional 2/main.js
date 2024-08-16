@@ -265,14 +265,15 @@
     ];
 
 
-
+document.write(`<div class="main">`)
 for (const usersListElement of usersList) {
+
     document.write(
-    `<div className="users-box">
-        <div className="user-block">
+    `<div class="users-box">
+        <div class="user-block">
             <h2>ID : ${usersListElement.id} NAME: ${usersListElement.name} USERNAME: ${usersListElement.username} </h2>               
             <h3>EMAIL: ${usersListElement.email}  PHONE: ${usersListElement.phone}</h3>
-            <div className="address-block">
+            <div class="address-block">
                 <p>City - ${usersListElement.address.city} </p>
                 <p>Street - ${usersListElement.address.street}</p>
                 <p>Suite - ${usersListElement.address.suite}</p>
@@ -280,6 +281,7 @@ for (const usersListElement of usersList) {
             </div>
         </div>
     </div>`)
-}
 
+}
+document.write(`</div>`)
 
