@@ -155,46 +155,46 @@
 // console.log(map)
 
 
-// let card = [
-//     {value: '6', cardSuit: 'heart', color: 'red'},
-//     {value: '7', cardSuit: 'heart', color: 'red'},
-//     {value: '8', cardSuit: 'heart', color: 'red'},
-//     {value: '9', cardSuit: 'heart', color: 'red'},
-//     {value: '10', cardSuit: 'heart', color: 'red'},
-//     {value: 'jack', cardSuit: 'heart', color: 'red'},
-//     {value: 'lady', cardSuit: 'heart', color: 'red'},
-//     {value: 'king', cardSuit: 'heart', color: 'red'},
-//     {value: 'ace', cardSuit: 'heart', color: 'red'},
-//     {value: '6', cardSuit: 'spade', color: 'black'},
-//     {value: '7', cardSuit: 'spade', color: 'black'},
-//     {value: '8', cardSuit: 'spade', color: 'black'},
-//     {value: '9', cardSuit: 'spade', color: 'black'},
-//     {value: '10', cardSuit: 'spade', color: 'black'},
-//     {value: 'jack', cardSuit: 'spade', color: 'black'},
-//     {value: 'lady', cardSuit: 'spade', color: 'black'},
-//     {value: 'kin', cardSuit: 'spade', color: 'black'},
-//     {value: 'ace', cardSuit: 'spade', color: 'black'},
-//     {value: '6', cardSuit: 'diamond', color: 'red'},
-//     {value: '7', cardSuit: 'diamond', color: 'red'},
-//     {value: '8', cardSuit: 'diamond', color: 'red'},
-//     {value: '9', cardSuit: 'diamond', color: 'red'},
-//     {value: '10', cardSuit: 'diamond', color: 'red'},
-//     {value: 'jack', cardSuit: 'diamond', color: 'red'},
-//     {value: 'lady', cardSuit: 'diamond', color: 'red'},
-//     {value: 'king', cardSuit: 'diamond', color: 'red'},
-//     {value: 'ace', cardSuit: 'diamond', color: 'red'},
-//     {value: 6, cardSuit: 'clubs', color: 'black'},
-//     {value: 7, cardSuit: 'clubs', color: 'black'},
-//     {value: 8, cardSuit: 'clubs', color: 'black'},
-//     {value: 9, cardSuit: 'clubs', color: 'black'},
-//     {value: 10, cardSuit: 'clubs', color: 'black'},
-//     {value: 'jack', cardSuit: 'clubs', color: 'black'},
-//     {value: 'lady', cardSuit: 'clubs', color: 'black'},
-//     {value: 'king', cardSuit: 'clubs', color: 'black'},
-//     {value: 'ace', cardSuit: 'clubs', color: 'black'},
-//
-//
-// ]
+let card = [
+    {value: '6', cardSuit: 'heart', color: 'red'},
+    {value: '7', cardSuit: 'heart', color: 'red'},
+    {value: '8', cardSuit: 'heart', color: 'red'},
+    {value: '9', cardSuit: 'heart', color: 'red'},
+    {value: '10', cardSuit: 'heart', color: 'red'},
+    {value: 'jack', cardSuit: 'heart', color: 'red'},
+    {value: 'lady', cardSuit: 'heart', color: 'red'},
+    {value: 'king', cardSuit: 'heart', color: 'red'},
+    {value: 'ace', cardSuit: 'heart', color: 'red'},
+    {value: '6', cardSuit: 'spade', color: 'black'},
+    {value: '7', cardSuit: 'spade', color: 'black'},
+    {value: '8', cardSuit: 'spade', color: 'black'},
+    {value: '9', cardSuit: 'spade', color: 'black'},
+    {value: '10', cardSuit: 'spade', color: 'black'},
+    {value: 'jack', cardSuit: 'spade', color: 'black'},
+    {value: 'lady', cardSuit: 'spade', color: 'black'},
+    {value: 'kin', cardSuit: 'spade', color: 'black'},
+    {value: 'ace', cardSuit: 'spade', color: 'black'},
+    {value: '6', cardSuit: 'diamond', color: 'red'},
+    {value: '7', cardSuit: 'diamond', color: 'red'},
+    {value: '8', cardSuit: 'diamond', color: 'red'},
+    {value: '9', cardSuit: 'diamond', color: 'red'},
+    {value: '10', cardSuit: 'diamond', color: 'red'},
+    {value: 'jack', cardSuit: 'diamond', color: 'red'},
+    {value: 'lady', cardSuit: 'diamond', color: 'red'},
+    {value: 'king', cardSuit: 'diamond', color: 'red'},
+    {value: 'ace', cardSuit: 'diamond', color: 'red'},
+    {value: 6, cardSuit: 'clubs', color: 'black'},
+    {value: 7, cardSuit: 'clubs', color: 'black'},
+    {value: 8, cardSuit: 'clubs', color: 'black'},
+    {value: 9, cardSuit: 'clubs', color: 'black'},
+    {value: 10, cardSuit: 'clubs', color: 'black'},
+    {value: 'jack', cardSuit: 'clubs', color: 'black'},
+    {value: 'lady', cardSuit: 'clubs', color: 'black'},
+    {value: 'king', cardSuit: 'clubs', color: 'black'},
+    {value: 'ace', cardSuit: 'clubs', color: 'black'},
+
+
+]
 
 
 // =========================
@@ -248,14 +248,19 @@
 
 // let reduce = card.reduce((accumulator, cards) => {
 //     if (cards.cardSuit === 'spade') {
-//         accumulator[0].push(cards)
+//         accumulator.spades.push(cards)
 //     } else if (cards.cardSuit === 'diamond') {
-//         accumulator[1].push(cards)
+//         accumulator.diamonds.push(cards)
 //     }else if (cards.cardSuit === 'heart'){
-//         accumulator[2].push(cards)
-//     }else accumulator[3].push(cards)
+//         accumulator.hearts.push(cards)
+//     }else accumulator.clubs.push(cards)
 //     return accumulator
-// }, [[],[],[],[]])
+// }, {
+//     spades:[],
+//     diamonds:[],
+//     hearts:[],
+//     clubs:[]
+// })
 //
 // console.log(reduce)
 
@@ -266,77 +271,77 @@
 // --написати пошук всіх об'єктів, в яких в modules є docker
 
 
-let coursesArray = [
-    {
-        title: 'JavaScript Complex',
-        monthDuration: 5,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-    },
-    {
-        title: 'Java Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'java core',
-            'java advanced']
-    },
-    {
-        title: 'Python Complex',
-        monthDuration: 6,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'angular',
-            'aws',
-            'docker',
-            'python core',
-            'python advanced']
-    },
-    {
-        title: 'QA Complex',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-    },
-    {
-        title: 'FullStack',
-        monthDuration: 7,
-        hourDuration: 909,
-        modules: ['html',
-            'css',
-            'js',
-            'mysql',
-            'mongodb',
-            'react',
-            'angular',
-            'aws',
-            'docker',
-            'git',
-            'node.js',
-            'python',
-            'java']
-    },
-    {
-        title: 'Frontend',
-        monthDuration: 4,
-        hourDuration: 909,
-        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-    }
-];
-
-let find = coursesArray.find((item)=> item.modules.includes('sass'))
-console.log(find)
-let find1 = coursesArray.find((item)=>item.modules.includes('docker'))
-console.log(find1)
+// let coursesArray = [
+//     {
+//         title: 'JavaScript Complex',
+//         monthDuration: 5,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+//     },
+//     {
+//         title: 'Java Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'java core',
+//             'java advanced']
+//     },
+//     {
+//         title: 'Python Complex',
+//         monthDuration: 6,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'python core',
+//             'python advanced']
+//     },
+//     {
+//         title: 'QA Complex',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+//     },
+//     {
+//         title: 'FullStack',
+//         monthDuration: 7,
+//         hourDuration: 909,
+//         modules: ['html',
+//             'css',
+//             'js',
+//             'mysql',
+//             'mongodb',
+//             'react',
+//             'angular',
+//             'aws',
+//             'docker',
+//             'git',
+//             'node.js',
+//             'python',
+//             'java']
+//     },
+//     {
+//         title: 'Frontend',
+//         monthDuration: 4,
+//         hourDuration: 909,
+//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+//     }
+// ];
+//
+// let find = coursesArray.find((item)=> item.modules.includes('sass'))
+// console.log(find)
+// let find1 = coursesArray.find((item)=>item.modules.includes('docker'))
+// console.log(find1)
