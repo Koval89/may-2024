@@ -247,13 +247,13 @@
 // #gsKLAsNWM
 // *Через Array.prototype. створити власний foreach, filter
 
-// Array.prototype.myForEach = function (callback) {
-//     const youArray = this
-//     for (const item of youArray) {
-//         callback(item)
-//     }
-// };
-// [11,22,33].myForEach((x)=>console.log(x))
+Array.prototype.myForEach = function (callback) {
+    const youArray = this
+    for (const item of youArray) {
+        callback(item)
+    }
+};
+[11,22,33].myForEach((x)=>console.log(x))
 
 Array.prototype.myFilter = function (call){
     const myArray = this
@@ -266,4 +266,14 @@ Array.prototype.myFilter = function (call){
 };
 
 [11,15,63,55,44,66,22,88].myFilter((item)=>console.log(item))
+
+Array.prototype.myFilter = function (call) {
+    const splice = this
+
+    call(splice.splice(0,1))
+
+};
+
+
+[11,22,3,4,5,6,9,87,55,5,2,56].myFilter((item)=> console.log(item))
 
