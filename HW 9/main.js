@@ -181,7 +181,10 @@ block1.innerText = 'Ма́ргарет Эвелин «Мэ́гги» Си́мп�
     'После появления в шоу Трейси Ульман, через три года семья Симпсонов получила собственный сериал на телеканале Fox, дебют произошёл 17 декабря 1989 года.'
 block1.classList.add('one')
 block1.style.background = 'green';
-block1.style.margin='0'
+block1.style.margin = '0'
+block1.id = '1'
+block1.style.height = '72px'
+
 
 let block2 = document.createElement(`p`)
 block2.innerText = 'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного ' +
@@ -192,17 +195,37 @@ block2.innerText = 'Ма́рджори Жакли́н «Мардж» Си́мп�
     'Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'
 block2.classList.add('two')
 block2.style.background = 'red'
-block2.style.margin='0'
+block2.style.margin = '0'
+block2.id = '2'
+block2.style.height = '72px'
 
 let block3 = document.createElement('p')
 block3.innerText = 'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». ' +
     'Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, ' +
     'абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.'
 block3.classList.add('three')
-block3.style.background='blue'
-block3.style.margin='0'
+block3.style.background = 'blue'
+block3.style.margin = '0'
+block3.id = '3'
+block3.style.height = '72px'
+
+
+
+
 
 document.body.append(block1, block2, block3)
+document.querySelector('.three').style.height = document.querySelector('.two').style.height
+
+
+
+let height1 = document.getElementById('1').offsetHeight
+console.log(height1)
+let height2 = document.getElementById('2').offsetHeight
+console.log(height2);
+let height3 = document.getElementById('3').offsetHeight
+console.log(height3);
+
+
 
 
 //
