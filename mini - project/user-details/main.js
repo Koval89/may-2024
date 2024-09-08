@@ -45,7 +45,7 @@ const foo = async () => {
     catchPhrase.innerText = `catchPhrase:${user.company.catchPhrase}`
     bs.innerText = `bs:${user.company.bs}`
 
-
+    div.className = 'div'
     let buttonPost = document.getElementById('buttonPost')
 
     buttonPost.onclick = () => {
@@ -53,10 +53,9 @@ const foo = async () => {
             .then((response) => response.json())
             .then((posts) => {
                 let divLi = document.createElement('div')
-                divLi.className='divLi'
+                divLi.className = 'divLi'
                 for (const post of posts) {
                     console.log(post)
-
 
 
                     let divPost = document.createElement('li');
@@ -65,7 +64,7 @@ const foo = async () => {
                     let postDetails = document.createElement('button')
                     postDetails.className = 'postDetails'
                     postDetails.innerText = 'post-details'
-                    postDetails.onclick=()=>{
+                    postDetails.onclick = () => {
                         location.href = `../post - details/index.html?postId=${post.id}`;
                         localStorage.setItem('post', JSON.stringify(post))
                     }

@@ -14,6 +14,7 @@ console.log(postPost)
 let divP = document.createElement('div')
 
 let divLi = document.createElement('div')
+divLi.className='divLi'
 
 let divPosts = document.createElement('li');
 divPosts.innerText = `
@@ -32,6 +33,7 @@ buttonComments.className = 'btnComments'
 buttonComments.onclick = ()=>{
 // location.href = `../comments/index.html?comments`
     let div1 = document.createElement('div')
+    div1.className='div1'
     fetch('https://jsonplaceholder.typicode.com/comments?postId='+postPost.id)
         .then((response)=> response.json())
         .then((comment)=>{

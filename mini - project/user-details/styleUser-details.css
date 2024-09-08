@@ -3,7 +3,7 @@
 
 .line{
 
-    color: green;
+    color: #f4064d;
 }
 #buttonPost{
     margin-left: 60px;
@@ -20,4 +20,14 @@
 
 .divLi{
     columns: 2;
+    background-color: green;
+
+}
+.div{
+    background-color: red;
+    height: 300px;
+    width: 300px;
+}
+body{
+    background-color: aquamarine;
 }
