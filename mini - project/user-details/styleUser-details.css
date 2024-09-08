@@ -1,0 +1,23 @@
+/*user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.*/
+
+
+.line{
+
+    color: green;
+}
+#buttonPost{
+    margin-left: 60px;
+}
+
+.divPost{
+
+    margin-top: 10px;
+
+}
+.postDetails{
+    margin-left: 10px;
+}
+
+.divLi{
+    columns: 2;
+}

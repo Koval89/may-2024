@@ -1,0 +1,17 @@
+#list{
+    column-count: 2;
+    border: 2px solid rgba(24, 114, 195, 0.07);
+    margin-top: 20px;
+    background: aqua;
+}
+.det{
+    color: red;
+    margin-top: 20px;
+
+}
+.divUser{
+
+}
+body{
+    background-color: green;
+}
